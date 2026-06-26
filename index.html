@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPCI | Premium Chartered Accountancy Coaching Platform</title>
+    <meta name="description" content="Prepare for CA Foundation, Intermediate, and Final with India's most advanced, tech-enabled chartered accountancy coaching platform. Launching soon.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Dynamic Mesh Background -->
+    <div class="mesh-bg">
+        <div class="mesh-blob blob-1"></div>
+        <div class="mesh-blob blob-2"></div>
+        <div class="mesh-blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                        <line x1="4" y1="22" x2="4" y2="15"></line>
+                    </svg>
+                </span>
+                <span class="logo-text">LP<span class="accent-text">CI</span></span>
+            </div>
+            <nav class="nav-links">
+                <a href="#levels" class="nav-link">Programs</a>
+                <a href="#features" class="nav-link">Features</a>
+                <span class="badge">Launching Q3 2026</span>
+            </nav>
+            <div class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.77" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section text-center">
+            <div class="container">
+                <div class="announcement-bar fade-in">
+                    <span class="pulse-dot"></span>
+                    <span>Exclusive Pre-registration Live</span>
+                </div>
+                
+                <h1 class="hero-title fade-in-up">
+                    The Pinnacle of <br>
+                    <span class="gradient-text">Chartered Accountancy</span> Coaching
+                </h1>
+                
+                <p class="hero-subtitle fade-in-up" id="subtext-container">
+                    Revolutionizing CA exam preparation with structured mastery modules, adaptive testing, and mentorship from industry-leading CAs.
+                </p>
+
+                <!-- Digital Countdown Timer -->
+                <div class="countdown-container fade-in-up">
+                    <div class="timer-card" id="days-card">
+                        <span class="timer-val" id="days">00</span>
+                        <span class="timer-label">DAYS</span>
+                    </div>
+                    <div class="timer-divider">:</div>
+                    <div class="timer-card" id="hours-card">
+                        <span class="timer-val" id="hours">00</span>
+                        <span class="timer-label">HOURS</span>
+                    </div>
+                    <div class="timer-divider">:</div>
+                    <div class="timer-card" id="minutes-card">
+                        <span class="timer-val" id="minutes">00</span>
+                        <span class="timer-label">MINS</span>
+                    </div>
+                    <div class="timer-divider">:</div>
+                    <div class="timer-card" id="seconds-card">
+                        <span class="timer-val" id="seconds">00</span>
+                        <span class="timer-label">SECS</span>
+                    </div>
+                </div>
+
+                <!-- Email Subscription Form -->
+                <div class="optin-form-container fade-in-up">
+                    <form id="subscribeForm" class="optin-form">
+                        <div class="input-group">
+                            <input type="email" id="emailInput" class="form-input" placeholder="Enter your email for early access" required autocomplete="email">
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span class="btn-text">Secure Early Access</span>
+                                <span class="btn-spinner hidden">
+                                    <svg class="spinner" viewBox="0 0 50 50">
+                                        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <p class="form-helper-text">Join 1,200+ aspirants who have pre-registered this week. No spam, ever.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CA Levels/Programs Section -->
+        <section id="levels" class="levels-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Engineered For Your Entire Journey</h2>
+                    <p class="section-desc">Tailored frameworks matching your growth scale, from beginner principles to high-level mastery.</p>
+                </div>
+
+                <div class="levels-grid">
+                    <!-- Foundation Card -->
+                    <div class="level-card" data-level="foundation">
+                        <div class="level-badge foundation-badge">ENTRY LEVEL</div>
+                        <div class="level-card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="level-card-title">CA Foundation</h3>
+                        <p class="level-card-desc">Establishing robust fundamentals in legal compliance, quantitative methods, and critical ledger entries.</p>
+                        
+                        <div class="level-subjects">
+                            <span class="subject-tag">Principles of Accounting</span>
+                            <span class="subject-tag">Mercantile Laws</span>
+                            <span class="subject-tag">Quantitative Aptitude</span>
+                        </div>
+
+                        <button class="btn btn-outline explore-btn" data-target="foundation">
+                            Explore Curriculum
+                            <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Intermediate Card -->
+                    <div class="level-card featured" data-level="intermediate">
+                        <div class="level-badge intermediate-badge">GROUP LEVEL</div>
+                        <div class="level-card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="level-card-title">CA Intermediate</h3>
+                        <p class="level-card-desc">Deepening analysis through dual-group tracks mapping taxation rules, audits, and corporate standards.</p>
+                        
+                        <div class="level-subjects">
+                            <span class="subject-tag">Advanced Accounting</span>
+                            <span class="subject-tag">Auditing & Assurance</span>
+                            <span class="subject-tag">Taxation (Direct/Indirect)</span>
+                        </div>
+
+                        <button class="btn btn-primary explore-btn" data-target="intermediate">
+                            Explore Curriculum
+                            <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Final Card -->
+                    <div class="level-card" data-level="final">
+                        <div class="level-badge final-badge">MASTERY LEVEL</div>
+                        <div class="level-card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                                <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                                <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                            </svg>
+                        </div>
+                        <h3 class="level-card-title">CA Final</h3>
+                        <p class="level-card-desc">Mastering complex financial structures, strategic fiscal planning, global reporting standards, and valuation models.</p>
+                        
+                        <div class="level-subjects">
+                            <span class="subject-tag">Financial Reporting</span>
+                            <span class="subject-tag">Strategic Financial Management</span>
+                        </div>
+
+                        <button class="btn btn-outline explore-btn" data-target="final">
+                            Explore Curriculum
+                            <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Status Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="progress-box glass">
+                    <div class="progress-header">
+                        <div>
+                            <h3>Development Progress</h3>
+                            <p class="progress-details">Finalizing visual study guides and mock test servers</p>
+                        </div>
+                        <span class="progress-percent" id="devProgress">87%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 87%"></div>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h4>Interactive Mock Engines</h4>
+                        <p>Simulate exam environments with real time feedback, audit logs of wrong responses, and comprehensive solutions.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h4>CA Mentor Networks</h4>
+                        <p>Get your study strategy vetted, answers analyzed, and schedules optimized by fully qualified CA coaches.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h4>Granular Performance Logs</h4>
+                        <p>Identify critical conceptual loopholes automatically across specific laws, accounting standards, and formulae.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registrants Board (Dynamically updated from LocalStorage) -->
+        <section class="registrants-section container text-center hidden" id="vipRegistrantsSection">
+            <h3 class="section-title">VIP Early Access List</h3>
+            <p class="section-desc">Locally registered candidates getting early platform credentials:</p>
+            <div class="registrant-tags-container" id="vipEmailContainer">
+                <!-- Injected via JavaScript -->
+            </div>
+            <button class="btn btn-outline btn-sm clear-vip-btn" id="clearVipsBtn">Reset Local List</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="footer-brand">LPCI</p>
+            <p class="footer-copy">&copy; 2026 LPCI Inc. All rights reserved. Designed for elite excellence in finance.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span class="dot-separator">&middot;</span>
+                <a href="#">Terms of Service</a>
+                <span class="dot-separator">&middot;</span>
+                <a href="#" id="viewRegistrantsToggle">Simulator Portal</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Drawer Modal (Dynamic Content Injection) -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Injected via Javascript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Main Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
